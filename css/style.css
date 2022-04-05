@@ -3,25 +3,16 @@ html, body{max-height: 100vh;max-width: 100vw;height: 100%;width: 100%; position
 
 html{background: radial-gradient(50% 50% at 50% 50%, #6e54e4 0%, #273bad 100%);}
 
-div#interface{position: fixed;text-align: center; min-height: 700px;  min-width: 300px;max-height: 100vh;max-width: 100vw;height: 1px;width: 100%;top: 250px;color: #ffffff;}
+div#interface{position: fixed;text-align: center;max-height: 100vh;max-width: 100vw;height: 1px;width: 100%;top: 250px;color: #ffffff;}
 
 h1{font-size: 56px;margin-bottom: 15px;font-weight: 400;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
 
 strong{font-size: 55px;font-weight: 650 ;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin-right:1px;}
 
-h2{font-weight: 400px;font-size: 22px;margin-top: 30px; margin-left:0;margin-right: 15px;}
+h2{font-weight: 400px;font-size: 22px;margin-top: 30px;}
 
-@media(max-width: 600px){h1{display: flex;flex-direction: column;font-size: 40px;}h2{font-size: 18px;}}
-
-footer{bottom: 0;color: rgb(0, 0, 0); position: fixed;text-align: center;max-height: 100vh;max-width: 100vw; width: 100%;font-size: 15px;}
+footer{bottom: 0;color: rgb(223, 223, 223); position: fixed;text-align: center;max-height: 100vh;max-width: 100vw; width: 100%;font-size: 15px;}
 
 footer p a{text-decoration: none;color: rgb(189, 189, 189);font-size: 13px;}
 
-@media only screen and (max-width: 600px) {
-  #interface{
-      margin-top: -8px;
-  }
-  h1{
-      margin-bottom: 65px;
-  }
-  }
+@media only screen and (max-width: 500px) {#interface{margin-top: calc((44vh - 100%))}h1{margin-bottom: 65px;margin-right: 17px;font-size: 41px;}strong{font-size: 40px;}h2{margin-left: 2px;margin-left: -15px;font-size: 18px;}}

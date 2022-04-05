@@ -1,6 +1,6 @@
 setInterval( ()=>{
     let now =  new Date()
-    let past = new Date('2021-03-26T17:00:00')
+    let past = new Date('2021-03-05T17:00:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
 
@@ -16,4 +16,11 @@ setInterval( ()=>{
     if(mesdiff == 0){document.getElementById("data").innerText = `${anodiff} ${anodiff == 1 ? "ano" : "anos"}`}
     if(mesdiff != 0 && anodiff != 0){document.getElementById("data").innerText = `\n${anodiff} ${anodiff == 1 ? "ano" : "anos"} e ${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`}}
 
+    window.addEventListener('resize', function() {
+        if(window.outerWidth <= 400) {
+            window.resizeTo(400, window.outerHeight);
+        }
+    }, true);
+
     },1000)
+    
