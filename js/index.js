@@ -17,8 +17,8 @@ setInterval( ()=>{
     if(mesdiff != 0 && anodiff != 0){document.getElementById("data").innerText = `\n${anodiff} ${anodiff == 1 ? "ano" : "anos"} e ${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`}}
 
     window.addEventListener('resize', function() {
-        if(window.outerWidth <= 400) {
-            window.resizeTo(400, window.outerHeight);
+        if(window.outerWidth <= 350) {
+            window.resizeTo(350, window.outerHeight);
         }
     }, true);
 
