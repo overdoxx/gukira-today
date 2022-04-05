@@ -2,7 +2,7 @@ async function cont(){
 
     setInterval( ()=>{
     let now =  new Date()
-    let past = new Date('2022-03-26T00:00:00')
+    let past = new Date('2022-02-03T00:00:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
     let sec = ((now.getTime() - past.getTime()) / 1000).toString().slice(0, -3)
