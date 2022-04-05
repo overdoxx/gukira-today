@@ -5,12 +5,12 @@ async function cont(){
     let past = new Date('2022-03-26T00:00:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
-    let sec = (now.getTime() - past.getTime()) / 1000
+    let sec = ((now.getTime() - past.getTime()) / 1000).toString().slice(0, -3)
     let anodiff = now.getFullYear() - past.getFullYear()
     let mesdiff = now.getMonth() - past.getMonth()
     console.log(mesdiff)
     document.getElementById("data").innerText = `${days.toString()} dias`
-    document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec).slice(0, -4)
+    document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec)
     document.getElementById("interface").style.display = "inline";
 
     if(now.getDate() == past.getDate()){
