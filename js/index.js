@@ -1,7 +1,7 @@
 async function cont(){
 
     setInterval( ()=>{
-    let now =  new Date()
+    let now =  new Date('2023-04-26T00:00:00')
     let past = new Date('2022-03-26T00:00:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
@@ -17,7 +17,7 @@ async function cont(){
     if(mesdiff == 0){
         document.getElementById("data").innerText = `${anodiff} ${anodiff == 1 ? "ano" : "anos"}`
     }
-    if(mesdiff != 0){
+    if(mesdiff != 0 && anodiff != 0){
         document.getElementById("data").innerText = `\n${anodiff} ${anodiff == 1 ? "ano" : "anos"} e ${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`
     }
     }

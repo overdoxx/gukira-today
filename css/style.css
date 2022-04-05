@@ -4,9 +4,9 @@ html{background: radial-gradient(50% 50% at 50% 50%, #6e54e4 0%, #273bad 100%);}
 
 div#interface{position: fixed;text-align: center;max-height: 100vh;max-width: 100vw;height: 1px;width: 100%;top: 250px;color: #ffffff;}
 
-h1{font-size: 56px;margin-bottom: 40px; margin: 15px;font-weight: 400;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
+h1{font-size: 56px;margin-bottom: 15px;font-weight: 400;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
 
-strong{font-size: 72px;font-weight: 650; white-space: nowrap ;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
+strong{font-size: 55px;font-weight: 650 ;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin-right:1px;}
 
 h2{font-weight: 400px;font-size: 22px;margin-top: 30px; margin-left:0;margin-right: 15px;}
 
