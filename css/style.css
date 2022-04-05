@@ -8,7 +8,7 @@ h1{font-size: 56px;margin-bottom: 40px; margin: 15px;font-weight: 400;font-famil
 
 strong{font-size: 72px;font-weight: 650; white-space: nowrap ;font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
 
-h2{font-weight: 400px;font-size: 22px;margin-top: 30px; margin-right: 15px;}
+h2{font-weight: 400px;font-size: 22px;margin-top: 30px; margin-left:0;margin-right: 15px;}
 
 @media(max-width: 600px){h1{display: flex;flex-direction: column;font-size: 40px;}h2{font-size: 18px;}}
 
