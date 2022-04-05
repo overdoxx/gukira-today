@@ -15,4 +15,4 @@ footer{bottom: 0;color: rgb(223, 223, 223); position: fixed;text-align: center;m
 
 footer p a{text-decoration: none;color: rgb(189, 189, 189);font-size: 13px;}
 
-@media only screen and (max-width: 500px) {#interface{margin-top: calc((44vh - 100%))}h1{margin-bottom: 65px;margin-right: 17px;font-size: 41px;}strong{font-size: 40px;}h2{margin-left: -10px;font-size: 18px;}}
+@media only screen and (max-width: 500px) {#interface{margin-top: calc((48vh - 100%))}h1{margin-bottom: 65px;margin-right: 17px;font-size: 41px;}strong{font-size: 40px;}h2{margin-left: -10px;font-size: 18px;}}
