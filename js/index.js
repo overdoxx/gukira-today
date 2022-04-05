@@ -8,7 +8,6 @@ async function cont(){
     let sec = ((now.getTime() - past.getTime()) / 1000).toString().slice(0, -3)
     let anodiff = now.getFullYear() - past.getFullYear()
     let mesdiff = now.getMonth() - past.getMonth()
-    console.log(mesdiff)
     document.getElementById("data").innerText = `${days.toString()} dias`
     document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec)
     document.getElementById("interface").style.display = "inline";
