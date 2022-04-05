@@ -11,10 +11,23 @@ setInterval( ()=>{
     document.getElementById("data").innerText = `${days.toString()} dias`
     document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec)
     document.getElementById("interface").style.display = "inline";
+    document.getElementById("txt").innerText = " que ela disse sim"
 
-    if(now.getDate() == past.getDate()){document.getElementById("data").innerText = `${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`
-    if(mesdiff == 0){document.getElementById("data").innerText = `${anodiff} ${anodiff == 1 ? "ano" : "anos"}`}
-    if(mesdiff != 0 && anodiff != 0){document.getElementById("data").innerText = `\n${anodiff} ${anodiff == 1 ? "ano" : "anos"} e ${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`}}
+    if(now.getDate() == past.getDate()){
+        document.getElementById("data").innerText = `${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`
+        document.getElementById("txt").innerText = " que você atura ela"
+    
+        if(mesdiff == 0){
+        document.getElementById("data").innerText = `${anodiff} ${anodiff == 1 ? "ano" : "anos"}`
+        document.getElementById("txt").innerText = " que você virou escravo"
+    }
+
+    if(mesdiff != 0 && anodiff != 0){
+        document.getElementById("data").innerText = `\n${anodiff} ${anodiff == 1 ? "ano" : "anos"} e ${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`
+        document.getElementById("txt").innerText = " que sua liberdade acabou"
+    }
+        document.body.style.backgroundImage = "url('../img/confetti.gif')";
+}
 
     window.addEventListener('resize', function() {
         if(window.outerWidth <= 350) {
