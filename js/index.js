@@ -1,6 +1,6 @@
 setInterval( ()=>{
     let now =  new Date()
-    let past = new Date('2022-03-24T00:00:00')
+    let past = new Date('2022-04-23T21:42:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
 
