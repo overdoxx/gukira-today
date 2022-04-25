@@ -8,7 +8,7 @@ setInterval( ()=>{
     let anodiff = now.getFullYear() - past.getFullYear()
     let mesdiff = now.getMonth() - past.getMonth()
 
-    document.getElementById("data").innerText = `${days.toString()} dias`
+    document.getElementById("data").innerText = `${days} ${days == 1 ? "dia" : "dias"}`
     document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec)
     document.getElementById("interface").style.display = "inline";
     document.getElementById("txt").innerText = " que ela disse sim"
