@@ -1,6 +1,6 @@
 setInterval( ()=>{
     let now =  new Date()
-    let past = new Date('2022-05-21T00:00:00')
+    let past = new Date('2022-04-23T21:42:00')
     let diff = Math.abs(now.getTime() - past.getTime())
     let days = Math.ceil(diff / (1000 * 60 * 60 * 24) - 1);
 
@@ -11,11 +11,11 @@ setInterval( ()=>{
     document.getElementById("data").innerText = `${days} ${days == 1 ? "dia" : "dias"}`
     document.getElementById('sec').innerText = new Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(sec)
     document.getElementById("interface").style.display = "inline";
-    document.getElementById("txt").innerText = " que ele disse sim"
+    document.getElementById("txt").innerText = " que ela disse sim"
 
     if(now.getDate() == past.getDate()){
         document.getElementById("data").innerText = `${mesdiff} ${mesdiff == 1 ? "mes" : "meses"}`
-        document.getElementById("txt").innerText = " que você atura ele"
+        document.getElementById("txt").innerText = " que você atura ela"
     
         if(mesdiff == 0){
         document.getElementById("data").innerText = `${anodiff} ${anodiff == 1 ? "ano" : "anos"}`
